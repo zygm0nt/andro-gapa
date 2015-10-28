@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroGapa</string>
+    <string name="action_search">Search</string>
+    <string name="action_compose">Compose</string>
+    <string name="action_gapa4">Sound 4</string>
+    <string name="action_gapa3">Sound 3</string>
+    <string name="action_gapa2">Sound 2</string>
+    <string name="action_gapa1">Sound 1</string>
+</resources>
