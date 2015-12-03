@@ -8,11 +8,14 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import roboguice.inject.InjectView
 
 class MainActivity : ActionBarActivity() {
 
-    var gapaButton: Button? = null
+    //var gapaButton: Button? = null
+
+    var gapaImageButton: ImageView? = null
 
     var soundToPlay = R.raw.gapa1
 
@@ -20,9 +23,9 @@ class MainActivity : ActionBarActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        gapaButton = findViewById(R.id.gapaButton) as Button?
+        gapaImageButton = findViewById(R.id.gapaImageButton) as ImageView?
 
-        gapaButton!!.setOnClickListener {
+        gapaImageButton!!.setOnClickListener {
             val mp = MediaPlayer.create(this, soundToPlay)
             mp.start();
         }
